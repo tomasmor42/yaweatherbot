@@ -58,7 +58,7 @@ def weather_forecast(update: Update, context: CallbackContext) -> int:
     user_data = context.user_data
     if ('city' not in user_data.keys()) or (not user_data['city']):
         update.message.reply_text(
-            "Set up a default city first",
+            "Set up a default city first by clicking on the Setup default city button",
             reply_markup=markup,
         )
     else:
