@@ -42,5 +42,5 @@ def conversation():
     dispatcher.add_handler(conv_handler)
     updater.start_webhook(listen="0.0.0.0",
                           port=int(PORT),
-                          url_path=TOKEN)
-    updater.bot.setWebhook('https://ya-weather-bot.herokuapp.com/' + TOKEN)
+                          url_path=TOKEN,
+                          webhook_url='https://ya-weather-bot.herokuapp.com/' + TOKEN)
