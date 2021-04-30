@@ -1,7 +1,7 @@
 from telegram.ext import Updater, CommandHandler, ConversationHandler, Filters, MessageHandler
 
 
-from config import TOKEN
+from config import TOKEN, PORT
 from consts import CHOOSING, FREE_FORM_TEXT, YES_OR_NO, CHOOSING_CITY
 from handlers import start, weather_forecast, enter_city, save_city, default
 
